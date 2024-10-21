@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Merriweather Sans", sans-serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Barlow", sans-serif;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.left {
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100vh;
+
+}
+
+.left .back_btn {
+    color: rgba(255, 255, 255, 0.526);
+    text-decoration: none;
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    font-weight: 600;
+
+
+}
+
+.heading1_pc {
+    color: rgba(255, 255, 255, 0.426);
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.img_con_pc {
+    width: 27rem;
+    /* margin: 2rem 6rem; */
+    display: block;
+    margin: auto;
+}
+
+
+.custom-button {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    /* border: 2px solid rgb(55, 55, 55); */
+    border: none;
+    width: 12rem;
+    /* Equivalent to 48 * 0.25rem */
+    border-radius: 1rem;
+    /* Equivalent to rounded-2xl */
+    height: 3rem;
+    /* Equivalent to h-14 */
+    position: relative;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    /* Equivalent to text-xl */
+    font-weight: 600;
+    /* Equivalent to font-semibold */
+}
+
+.fa-arrow-left {
+    padding: 0.7rem;
+    border-radius: 0.75rem;
+}
+
+.custom-button-inner {
+    background-color: #545454;
+    /* Equivalent to bg-green-400 */
+    border-radius: 0.75rem;
+    /* Equivalent to rounded-xl */
+    height: 3rem;
+    /* Equivalent to h-12 */
+    width: 25%;
+    /* Equivalent to w-1/4 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0.25rem;
+    /* Equivalent to left-1 */
+    top: 0.25rem;
+    /* Equivalent to top-[4px] */
+    z-index: 10;
+    transition: width 0.5s;
+    /* Equivalent to duration-500 */
+}
+
+.custom-button:hover .custom-button-inner {
+    width: 11.5rem;
+    /* Equivalent to w-[184px] */
+}
+
+.custom-button-text {
+    transform: translateX(0.5rem);
+    /* Equivalent to translate-x-2 */
+}
+
+/* right sectiom -------------------------------------------------- */
+.right {
+    width: 50%;
+    /* border: 2px solid red; */
+
+    height: 100vh;
+}
+
+.crop_for_logo_pc {
+    display: block;
+    margin: auto;
+    /* border: 2px solid red; */
+    /* width: fit-content; */
+    width: 7rem;
+    margin-top: 8rem;
+    height: 6rem;
+    overflow: hidden;
+}
+
+.comp_logo_pc {
+    height: 12rem;
+    position: relative;
+    bottom: 3.2rem;
+    right: 2.4rem;
+
+}
+
+.heading2_pc {
+    color: #0ca2ff;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: "Nerko One", cursive;
+    font-weight: 200;
+    text-align: center;
+}
+
+.info_pc {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.cont_links_pc {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    display: block;
+    margin: 1rem 0rem;
+    border-bottom: 2px solid #3e3e3e;
+
+
+}
+
+.cont_links_pc:hover {
+    color: #0ca2ff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    display: block;
+    margin: 1rem 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+.mob {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:999px) {
+    .pc {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .mob_right {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    .crop_for_logo_pc {
+        display: block;
+        margin: auto;
+        /* border: 2px solid red; */
+        /* width: fit-content; */
+        width: 7rem;
+        margin-top: 5rem;
+        height: 6rem;
+        overflow: hidden;
+    }
+
+    .info_pc {
+        /* border: 2px solid red; */
+        width: 80%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width:750px) {
+    .mob_right {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+    .heading2_pc {
+        color: #0ca2ff;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-family: "Nerko One", cursive;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .mob_right {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .info_pc {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .cont_links_pc {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+        padding-left: 1rem;
+        display: block;
+        margin: 1rem 0rem;
+    }
+    .cont_links_pc:hover {
+        color: #0ca2ff;;
+        text-decoration: none;
+        font-size: 1rem;
+        padding-left: 1rem;
+        display: block;
+        margin: 1rem 0rem;
+    }
+
+}
